@@ -1,8 +1,14 @@
-# mailsy
+<p align="center">
+  <img src="assets/mailsy-logo.svg" alt="Mailsy logo" width="220">
+</p>
 
-[![CI](https://github.com/Kelvin-Jesus/mailsy-rs/actions/workflows/ci.yml/badge.svg)](https://github.com/Kelvin-Jesus/mailsy-rs/actions/workflows/ci.yml)
-[![Crates.io](https://img.shields.io/crates/v/mailsy.svg)](https://crates.io/crates/mailsy)
-[![License](https://img.shields.io/crates/l/mailsy.svg)](LICENSE)
+<h1 align="center">mailsy</h1>
+
+<p align="center">
+  <a href="https://github.com/Kelvin-Jesus/mailsy-rs/actions/workflows/ci.yml"><img src="https://github.com/Kelvin-Jesus/mailsy-rs/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <a href="https://crates.io/crates/mailsy"><img src="https://img.shields.io/crates/v/mailsy.svg" alt="Crates.io"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/crates/l/mailsy.svg" alt="License"></a>
+</p>
 
 `mailsy` creates and checks a disposable [Mail.tm](https://mail.tm/) inbox
 without leaving the terminal.
