@@ -35,7 +35,7 @@ pub(crate) struct AccountStore {
 impl AccountStore {
     pub(crate) fn from_config_dir() -> Result<Self> {
         let config_dir = dirs::config_dir().context("could not determine the config directory")?;
-        Ok(Self::new(config_dir.join("mailsy").join("account.json")))
+        Ok(Self::new(config_dir.join("mailghost").join("account.json")))
     }
 
     pub(crate) fn new(path: PathBuf) -> Self {

@@ -2,7 +2,7 @@ use clap::{Parser, Subcommand};
 
 /// Manage a disposable Mail.tm inbox from the terminal.
 #[derive(Debug, Parser)]
-#[command(name = "mailsy", version, about)]
+#[command(name = "mailghost", version, about)]
 pub struct Cli {
     #[command(subcommand)]
     pub(crate) command: Command,
@@ -47,7 +47,7 @@ mod tests {
         ];
 
         for (alias, expected) in cases {
-            let cli = Cli::try_parse_from(["mailsy", alias]).unwrap();
+            let cli = Cli::try_parse_from(["mailghost", alias]).unwrap();
             let actual = match cli.command {
                 Command::Generate => "generate",
                 Command::Messages => "messages",

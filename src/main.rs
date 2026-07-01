@@ -1,5 +1,5 @@
 use clap::Parser;
-use mailsy::{run, Cli};
+use mailghost::{run, Cli};
 
 #[tokio::main]
 async fn main() {

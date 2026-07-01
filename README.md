@@ -1,17 +1,17 @@
 <p align="center">
-  <img src="assets/mailsy-logo.svg" alt="Mailsy logo" width="220">
+  <img src="assets/mailghost-logo.svg" alt="Mailghost logo" width="220">
 </p>
 
-<h1 align="center">mailsy</h1>
+<h1 align="center">mailghost</h1>
 
 <p align="center">
-  <a href="https://github.com/Kelvin-Jesus/mailsy-rs/actions/workflows/ci.yml"><img src="https://github.com/Kelvin-Jesus/mailsy-rs/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
-  <a href="https://crates.io/crates/mailsy"><img src="https://img.shields.io/crates/v/mailsy.svg" alt="Crates.io"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/crates/l/mailsy.svg" alt="License"></a>
+  <a href="https://github.com/Kelvin-Jesus/mailghost/actions/workflows/ci.yml"><img src="https://github.com/Kelvin-Jesus/mailghost/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <a href="https://crates.io/crates/mailghost"><img src="https://img.shields.io/crates/v/mailghost.svg" alt="Crates.io"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/crates/l/mailghost.svg" alt="License"></a>
 </p>
 
-`mailsy` creates and checks a disposable [Mail.tm](https://mail.tm/) inbox
-without leaving the terminal.
+`mailghost` is a friendly command-line client for creating and checking a
+disposable [Mail.tm](https://mail.tm/) inbox without leaving the terminal.
 
 > Disposable inboxes are public-facing, temporary infrastructure. Do not use
 > them for sensitive data, permanent accounts, or account recovery.
@@ -28,20 +28,20 @@ without leaving the terminal.
 After a release is published, install it from crates.io:
 
 ```sh
-cargo install mailsy --locked
+cargo install mailghost --locked
 ```
 
 Or install the current repository version:
 
 ```sh
-cargo install --git https://github.com/Kelvin-Jesus/mailsy-rs
+cargo install --git https://github.com/Kelvin-Jesus/mailghost
 ```
 
 To build from a local checkout:
 
 ```sh
-git clone https://github.com/Kelvin-Jesus/mailsy-rs.git
-cd mailsy-rs
+git clone https://github.com/Kelvin-Jesus/mailghost.git
+cd mailghost
 cargo build --release
 ```
 
@@ -63,27 +63,27 @@ a desktop application.
 ## Usage
 
 ```sh
-mailsy generate
-mailsy account
-mailsy messages
-mailsy delete
+mailghost generate
+mailghost account
+mailghost messages
+mailghost delete
 ```
 
-The original `g`, `me`, `m`, and `d` forms remain available as aliases. Run
-`mailsy --help` or `mailsy <command> --help` for command-line help.
+The `g`, `me`, `m`, and `d` forms are available as short aliases. Run
+`mailghost --help` or `mailghost <command> --help` for command-line help.
 
 ## Local data
 
-The active account is stored as `mailsy/account.json` inside the operating
+The active account is stored as `mailghost/account.json` inside the operating
 system's user configuration directory:
 
-- macOS: `~/Library/Application Support/mailsy/account.json`
-- Linux: `${XDG_CONFIG_HOME:-~/.config}/mailsy/account.json`
+- macOS: `~/Library/Application Support/mailghost/account.json`
+- Linux: `${XDG_CONFIG_HOME:-~/.config}/mailghost/account.json`
 
-When you select a message, `mailsy messages` writes its text body to a
+When you select a message, `mailghost messages` writes its text body to a
 temporary file and asks the operating system to open it.
 
-`mailsy delete` removes local data only. Inbox availability and retention are
+`mailghost delete` removes local data only. Inbox availability and retention are
 controlled by Mail.tm.
 
 ## Development

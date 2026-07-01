@@ -23,7 +23,7 @@ pub async fn run(cli: Cli) -> Result<()> {
 
 async fn generate(store: &AccountStore) -> Result<()> {
     if store.load()?.is_some() {
-        bail!("an inbox already exists; delete it first with `mailsy delete`");
+        bail!("an inbox already exists; delete it first with `mailghost delete`");
     }
 
     let inbox = TempMail::new()
@@ -121,12 +121,12 @@ fn show_account(store: &AccountStore) -> Result<()> {
 fn require_account(store: &AccountStore) -> Result<Account> {
     store
         .load()?
-        .context("no inbox exists; create one with `mailsy generate`")
+        .context("no inbox exists; create one with `mailghost generate`")
 }
 
 #[cfg(not(target_os = "android"))]
 fn open_message(body: &str) -> Result<()> {
-    let path = std::env::temp_dir().join(format!("mailsy-message-{}.txt", std::process::id()));
+    let path = std::env::temp_dir().join(format!("mailghost-message-{}.txt", std::process::id()));
     fs::write(&path, body).with_context(|| format!("could not write {}", path.display()))?;
     open::that(&path).with_context(|| format!("could not open {}", path.display()))
 }

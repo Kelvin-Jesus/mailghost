@@ -12,7 +12,7 @@ cargo clippy --all-targets -- -D warnings
 ```
 
 Keep changes focused and add tests for new behavior. Commit `Cargo.lock`
-changes because `mailsy` is an application.
+changes because `mailghost` is an application.
 
 ## Pull requests
 

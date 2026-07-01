@@ -1,22 +1,22 @@
 [package]
-name = "mailsy"
+name = "mailghost"
 version = "1.0.0"
 edition = "2021"
 rust-version = "1.88"
 authors = ["Kelvin Jesus <kj.avelino.cambiaghi@gmail.com>"]
-description = "Create and inspect a disposable Mail.tm inbox from the terminal"
+description = "A friendly disposable Mail.tm inbox for your terminal"
 license = "MIT"
-repository = "https://github.com/Kelvin-Jesus/mailsy-rs"
-homepage = "https://github.com/Kelvin-Jesus/mailsy-rs"
-documentation = "https://github.com/Kelvin-Jesus/mailsy-rs#readme"
+repository = "https://github.com/Kelvin-Jesus/mailghost"
+homepage = "https://github.com/Kelvin-Jesus/mailghost"
+documentation = "https://github.com/Kelvin-Jesus/mailghost#readme"
 readme = "README.md"
 keywords = ["cli", "email", "disposable-email", "mail-tm"]
 categories = ["command-line-utilities", "email"]
-exclude = [".github/", ".gitignore"]
-default-run = "mailsy"
+exclude = [".github/", ".gitignore", "thoughts/"]
+default-run = "mailghost"
 
 [[bin]]
-name = "mailsy"
+name = "mailghost"
 path = "src/main.rs"
 
 [dependencies]

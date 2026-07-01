@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1254" height="1254" viewBox="0 0 1254 1254" role="img" aria-label="Mailghost app icon">
+  <defs>
+    <clipPath id="app-clip">
+      <rect x="0" y="0" width="1254" height="1254" rx="184" ry="184"/>
+    </clipPath>
+
+    <clipPath id="env-clip">
+      <rect x="157" y="512" width="939" height="603" rx="72" ry="72"/>
+    </clipPath>
+
+    <linearGradient id="bg" x1="175" y1="40" x2="1036" y2="1170" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3b118d"/>
+      <stop offset=".45" stop-color="#4b16a6"/>
+      <stop offset="1" stop-color="#2a0868"/>
+    </linearGradient>
+
+    <radialGradient id="bg-center" cx="52%" cy="32%" r="78%">
+      <stop offset="0" stop-color="#6b31d4" stop-opacity=".42"/>
+      <stop offset=".56" stop-color="#47139e" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#140128" stop-opacity=".55"/>
+    </radialGradient>
+
+    <radialGradient id="bg-vignette" cx="50%" cy="46%" r="72%">
+      <stop offset=".54" stop-color="#000000" stop-opacity="0"/>
+      <stop offset=".88" stop-color="#000000" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#000000" stop-opacity=".42"/>
+    </radialGradient>
+
+    <linearGradient id="rear-flap" x1="265" y1="255" x2="1002" y2="903" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#eee4ff" stop-opacity=".84"/>
+      <stop offset=".52" stop-color="#c7b1f3" stop-opacity=".77"/>
+      <stop offset="1" stop-color="#8064dc" stop-opacity=".62"/>
+    </linearGradient>
+
+    <linearGradient id="rear-flap-light" x1="390" y1="160" x2="940" y2="670" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".44"/>
+      <stop offset=".6" stop-color="#d8c7ff" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#6b44c5" stop-opacity=".18"/>
+    </linearGradient>
+
+    <linearGradient id="ghost-fill" x1="513" y1="224" x2="724" y2="882" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fffaff"/>
+      <stop offset=".46" stop-color="#f2ebff"/>
+      <stop offset="1" stop-color="#c8b0f2"/>
+    </linearGradient>
+
+    <radialGradient id="ghost-glow" cx="44%" cy="23%" r="78%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".58"/>
+      <stop offset=".55" stop-color="#ffffff" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#7b4bce" stop-opacity=".2"/>
+    </radialGradient>
+
+    <radialGradient id="cheek" cx="35%" cy="26%" r="78%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".83"/>
+      <stop offset=".66" stop-color="#ede5ff" stop-opacity=".58"/>
+      <stop offset="1" stop-color="#9f83df" stop-opacity=".26"/>
+    </radialGradient>
+
+    <linearGradient id="left-panel" x1="166" y1="548" x2="534" y2="1047" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f8f2ff"/>
+      <stop offset=".56" stop-color="#eadcff"/>
+      <stop offset="1" stop-color="#c5aff0"/>
+    </linearGradient>
+
+    <linearGradient id="right-panel" x1="1080" y1="548" x2="745" y2="1045" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f8f2ff"/>
+      <stop offset=".56" stop-color="#eadcff"/>
+      <stop offset="1" stop-color="#c5aff0"/>
+    </linearGradient>
+
+    <linearGradient id="front-panel" x1="332" y1="873" x2="900" y2="1168" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#efe5ff"/>
+      <stop offset=".46" stop-color="#faf6ff"/>
+      <stop offset="1" stop-color="#d5c2f8"/>
+    </linearGradient>
+
+    <radialGradient id="front-light" cx="49%" cy="39%" r="66%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".55"/>
+      <stop offset=".65" stop-color="#ffffff" stop-opacity=".14"/>
+      <stop offset="1" stop-color="#b89bed" stop-opacity=".18"/>
+    </radialGradient>
+
+    <linearGradient id="purple-ink" x1="440" y1="398" x2="905" y2="1052" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5422b0"/>
+      <stop offset="1" stop-color="#48139c"/>
+    </linearGradient>
+
+    <filter id="soft-shadow" x="-14%" y="-14%" width="128%" height="128%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#16003c" flood-opacity=".23"/>
+    </filter>
+
+    <filter id="small-shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#3b148d" flood-opacity=".22"/>
+    </filter>
+
+    <filter id="paper-noise" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 .035"/>
+      </feComponentTransfer>
+      <feBlend in="SourceGraphic" mode="soft-light"/>
+    </filter>
+  </defs>
+
+  <g clip-path="url(#app-clip)">
+    <rect width="1254" height="1254" fill="url(#bg)"/>
+    <rect width="1254" height="1254" fill="url(#bg-center)"/>
+    <rect width="1254" height="1254" fill="url(#bg-vignette)"/>
+
+    <g filter="url(#soft-shadow)">
+      <path d="M158 535c0-28 12-54 34-72l369-318c39-34 92-36 133-4l390 316c35 29 48 76 20 113L701 927c-42 38-101 40-146 4L188 616c-20-17-30-49-30-81Z" fill="url(#rear-flap)"/>
+      <path d="M219 538 580 231c30-26 74-29 106-7l382 318c17 14 24 34 23 55L704 918c-48 40-111 41-161 1L174 608c-13-11-18-29-15-47 16 19 38 29 60-23Z" fill="url(#rear-flap-light)" opacity=".64"/>
+    </g>
+
+    <g id="ghost" filter="url(#soft-shadow)">
+      <path d="M311 758c4-161 39-291 116-392 75-98 180-142 305-137 65 3 100 49 150 82 42 28 76 20 111-15 29-30 76-42 112-23 25 13 31 39 4 48-42 13-66 43-67 82-1 33 14 65 44 92-24 19-29 48-16 85 33 94 8 201-65 261-78 63-187 77-299 40-43-14-75-25-113-15-57 15-112 22-168 3-65-22-105-57-114-111Z" fill="url(#ghost-fill)"/>
+      <path d="M326 741c10-140 42-253 106-342 74-103 181-148 316-140 55 3 93 39 131 64 43 28 82 20 118-18 29-30 81-35 106-11-45 10-72 42-73 88-1 43 18 82 52 112-29 22-27 56-15 91 29 83 6 176-57 233-64 59-160 79-259 57-61-13-96-32-145-19-63 17-116 27-172 6-60-22-98-59-108-121Z" fill="url(#ghost-glow)"/>
+    </g>
+
+    <ellipse cx="421" cy="708" rx="60" ry="76" transform="rotate(-33 421 708)" fill="url(#cheek)" opacity=".86" filter="url(#small-shadow)"/>
+    <ellipse cx="817" cy="710" rx="60" ry="76" transform="rotate(35 817 710)" fill="url(#cheek)" opacity=".86" filter="url(#small-shadow)"/>
+
+    <g id="face" fill="none" stroke="url(#purple-ink)" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="498" cy="548" r="86" stroke-width="21"/>
+      <circle cx="755" cy="548" r="86" stroke-width="21"/>
+      <path d="M581 546c22-27 69-27 91 0" stroke-width="21"/>
+      <path d="M470 419c16-16 39-17 54-4" stroke-width="21"/>
+      <path d="M742 415c18-9 44-3 58 15" stroke-width="21"/>
+      <path d="M590 637c16 34 57 36 78 1" stroke-width="21"/>
+    </g>
+
+    <g fill="url(#purple-ink)">
+      <circle cx="503" cy="550" r="38"/>
+      <circle cx="756" cy="550" r="38"/>
+    </g>
+
+    <g id="envelope" filter="url(#soft-shadow)">
+      <g clip-path="url(#env-clip)">
+        <path d="M157 512 627 887 157 1115Z" fill="url(#left-panel)"/>
+        <path d="M1096 512 627 887 1096 1115Z" fill="url(#right-panel)"/>
+        <path d="M157 1115 502 814 C548 854 590 858 627 858 C663 858 707 853 752 814 L1096 1115 H157Z" fill="url(#front-panel)"/>
+        <path d="M157 1115 502 814 C548 854 590 858 627 858 C663 858 707 853 752 814 L1096 1115 H157Z" fill="url(#front-light)" filter="url(#paper-noise)"/>
+        <path d="M157 516 563 864c38 33 89 33 128 1l405-349" fill="none" stroke="#ffffff" stroke-opacity=".50" stroke-width="20" stroke-linecap="round"/>
+        <path d="M161 1111 502 814" fill="none" stroke="#b49be8" stroke-opacity=".22" stroke-width="12"/>
+        <path d="M1092 1111 752 814" fill="none" stroke="#b49be8" stroke-opacity=".22" stroke-width="12"/>
+        <path d="M502 814 C548 854 590 858 627 858 C663 858 707 853 752 814" fill="none" stroke="#ffffff" stroke-opacity=".36" stroke-width="13" stroke-linecap="round"/>
+      </g>
+    </g>
+
+    <g id="terminal" fill="none" stroke="url(#purple-ink)" stroke-width="30" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M802 957 861 1000 802 1044"/>
+      <path d="M875 1044h58"/>
+    </g>
+  </g>
+</svg>

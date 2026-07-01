@@ -1,4 +1,4 @@
-//! Core application code for the `mailsy` command-line client.
+//! Core application code for the `mailghost` command-line client.
 
 mod account;
 mod app;
