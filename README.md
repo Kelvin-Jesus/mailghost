@@ -31,11 +31,9 @@ Install the prebuilt binary with Homebrew on macOS or Linux:
 brew install Kelvin-Jesus/tap/mailghost
 ```
 
-On Arch Linux, install the prebuilt AUR package with an AUR helper:
-
-```sh
-yay -S mailghost-bin
-```
+Arch Linux packaging is prepared, but its initial AUR publication is pending
+while new AUR account registrations are unavailable. Until then, use the
+prebuilt Linux archive from the [latest release](https://github.com/Kelvin-Jesus/mailghost/releases/latest).
 
 You can also install it from crates.io:
 
