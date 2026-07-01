@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://github.com/Kelvin-Jesus/mailghost/actions/workflows/ci.yml"><img src="https://github.com/Kelvin-Jesus/mailghost/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
   <a href="https://crates.io/crates/mailghost"><img src="https://img.shields.io/crates/v/mailghost.svg" alt="Crates.io"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/crates/l/mailghost.svg" alt="License"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/Kelvin-Jesus/mailghost" alt="License"></a>
 </p>
 
 `mailghost` is a friendly command-line client for creating and checking a
