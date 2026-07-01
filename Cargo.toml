@@ -2,7 +2,7 @@
 name = "mailsy"
 version = "1.0.0"
 edition = "2021"
-rust-version = "1.85"
+rust-version = "1.88"
 authors = ["Kelvin Jesus <kj.avelino.cambiaghi@gmail.com>"]
 description = "Create and inspect a disposable Mail.tm inbox from the terminal"
 license = "MIT"

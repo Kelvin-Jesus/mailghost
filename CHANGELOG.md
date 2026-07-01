@@ -8,6 +8,8 @@ All notable changes to this project are documented here. The format follows
 
 ### Changed
 
+- Corrected the minimum supported Rust version to 1.88 to match the locked
+  dependency graph.
 - Added descriptive command names while retaining the original short aliases.
 - Split account storage, CLI parsing, and application behavior into testable
   modules.
