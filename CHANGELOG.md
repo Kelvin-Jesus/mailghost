@@ -6,6 +6,12 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [1.1.3] - 2026-07-02
+
+### Changed
+
+- Restored the original compact terminal envelope from v1.1.0.
+
 ## [1.1.2] - 2026-07-01
 
 ### Changed
