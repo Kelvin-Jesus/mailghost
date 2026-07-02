@@ -29,17 +29,22 @@ fn render(output: &mut dyn Write) -> io::Result<()> {
 
     writeln!(
         output,
-        "{cyan}       .------------------.{cyan:#}      \
+        "{cyan}    ╭────────────────────────╮{cyan:#}      \
          {violet}mailghost {}{violet:#}",
         env!("CARGO_PKG_VERSION")
     )?;
     writeln!(
         output,
-        "{cyan}      / \\                /{cyan:#}       {}",
+        "{cyan}    │╲                      ╱│{cyan:#}      {}",
         env!("CARGO_PKG_DESCRIPTION")
     )?;
-    writeln!(output, "{blue}     |   \\     >_       /{blue:#}")?;
-    writeln!(output, "{blue}     '------------------'{blue:#}")?;
+    writeln!(output, "{cyan}    │  ╲                  ╱  │{cyan:#}")?;
+    writeln!(
+        output,
+        "{blue}    │    ╲{blue:#}      {command_style}>_{command_style:#}      \
+         {blue}╱    │{blue:#}"
+    )?;
+    writeln!(output, "{blue}    ╰────────────────────────╯{blue:#}")?;
 
     writeln!(output)?;
     writeln!(output, "{heading}Usage{heading:#}")?;

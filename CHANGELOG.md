@@ -6,6 +6,12 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [1.1.1] - 2026-07-01
+
+### Fixed
+
+- Replaced the uneven terminal envelope with a symmetrical Unicode drawing.
+
 ## [1.1.0] - 2026-07-01
 
 ### Added
@@ -41,6 +47,7 @@ All notable changes to this project are documented here. The format follows
   availability.
 - Set the minimum supported Rust version to 1.88.
 
-[Unreleased]: https://github.com/Kelvin-Jesus/mailghost/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/Kelvin-Jesus/mailghost/compare/v1.1.1...HEAD
+[1.1.1]: https://github.com/Kelvin-Jesus/mailghost/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/Kelvin-Jesus/mailghost/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/Kelvin-Jesus/mailghost/releases/tag/v1.0.0
