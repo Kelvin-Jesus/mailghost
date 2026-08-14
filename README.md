@@ -32,6 +32,19 @@ brew tap kelvin-jesus/mailghost https://github.com/Kelvin-Jesus/mailghost
 brew install kelvin-jesus/mailghost/mailghost
 ```
 
+If you installed Mailghost from the previous `Kelvin-Jesus/tap` repository,
+migrate to the formula maintained in this repository:
+
+```sh
+brew uninstall mailghost
+brew untap kelvin-jesus/tap
+brew tap kelvin-jesus/mailghost https://github.com/Kelvin-Jesus/mailghost
+brew install kelvin-jesus/mailghost/mailghost
+```
+
+This only replaces the Homebrew installation. Your locally stored Mailghost
+account remains unchanged.
+
 Arch Linux packaging is prepared, but its initial AUR publication is pending
 while new AUR account registrations are unavailable. Until then, use the
 prebuilt Linux archive from the [latest release](https://github.com/Kelvin-Jesus/mailghost/releases/latest).
