@@ -28,7 +28,8 @@ disposable [Mail.tm](https://mail.tm/) inbox without leaving the terminal.
 Install the prebuilt binary with Homebrew on macOS or Linux:
 
 ```sh
-brew install Kelvin-Jesus/tap/mailghost
+brew tap kelvin-jesus/mailghost https://github.com/Kelvin-Jesus/mailghost
+brew install kelvin-jesus/mailghost/mailghost
 ```
 
 Arch Linux packaging is prepared, but its initial AUR publication is pending

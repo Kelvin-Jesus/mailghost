@@ -8,8 +8,6 @@ on:
         required: true
         type: string
     secrets:
-      HOMEBREW_TAP_TOKEN:
-        required: true
       AUR_SSH_PRIVATE_KEY:
         required: true
       AUR_KNOWN_HOSTS:
@@ -88,12 +86,12 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email \
             "41898282+github-actions[bot]@users.noreply.github.com"
-          brew tap-new Kelvin-Jesus/tap
+          brew tap-new kelvin-jesus/mailghost
           cp generated/homebrew/Formula/mailghost.rb \
-            "$(brew --repository Kelvin-Jesus/tap)/Formula/mailghost.rb"
-          brew audit --strict --online Kelvin-Jesus/tap/mailghost
-          brew install Kelvin-Jesus/tap/mailghost
-          brew test Kelvin-Jesus/tap/mailghost
+            "$(brew --repository kelvin-jesus/mailghost)/Formula/mailghost.rb"
+          brew audit --strict --online kelvin-jesus/mailghost/mailghost
+          brew install kelvin-jesus/mailghost/mailghost
+          brew test kelvin-jesus/mailghost/mailghost
           mailghost --version | grep -F "${RELEASE_TAG#v}"
 
   test-aur:
@@ -154,17 +152,17 @@ jobs:
           package/mailghost --version | grep -F "${RELEASE_TAG#v}"
 
   publish-homebrew:
-    name: Update Homebrew tap
+    name: Update Homebrew formula
     if: github.event_name == 'workflow_call' || inputs.publish
     needs: test-homebrew
     runs-on: ubuntu-24.04
+    permissions:
+      contents: write
 
     steps:
       - uses: actions/checkout@v6
         with:
-          repository: Kelvin-Jesus/homebrew-tap
-          token: ${{ secrets.HOMEBREW_TAP_TOKEN }}
-          path: tap
+          ref: main
       - uses: actions/download-artifact@v8
         with:
           name: package-definitions
@@ -173,18 +171,18 @@ jobs:
         shell: bash
         run: |
           current_version="$(
-            sed -n 's/^  version "\(.*\)"/\1/p' tap/Formula/mailghost.rb 2>/dev/null || true
+            sed -n 's/^  version "\(.*\)"/\1/p' Formula/mailghost.rb 2>/dev/null || true
           )"
           if test "${current_version}" = "${RELEASE_TAG#v}"; then
             echo "Homebrew formula already publishes ${RELEASE_TAG}."
             exit 0
           fi
-          cp generated/homebrew/Formula/mailghost.rb tap/Formula/mailghost.rb
-          git -C tap config user.name "github-actions[bot]"
-          git -C tap config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git -C tap add Formula/mailghost.rb
-          git -C tap commit -m "mailghost ${RELEASE_TAG#v}"
-          git -C tap push
+          cp generated/homebrew/Formula/mailghost.rb Formula/mailghost.rb
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Formula/mailghost.rb
+          git commit -m "chore: update Homebrew formula to ${RELEASE_TAG#v}"
+          git push origin HEAD:main
 
   publish-aur:
     name: Update AUR package

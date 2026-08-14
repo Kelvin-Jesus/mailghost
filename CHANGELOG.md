@@ -6,6 +6,11 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+### Changed
+
+- Consolidated the Homebrew formula and its release publishing into the main
+  Mailghost repository.
+
 ## [1.1.3] - 2026-07-02
 
 ### Changed

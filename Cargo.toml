@@ -12,7 +12,7 @@ documentation = "https://github.com/Kelvin-Jesus/mailghost#readme"
 readme = "README.md"
 keywords = ["cli", "email", "disposable-email", "mail-tm"]
 categories = ["command-line-utilities", "email"]
-exclude = [".github/", ".gitignore", "thoughts/"]
+exclude = [".github/", ".gitignore", "Formula/", "thoughts/"]
 default-run = "mailghost"
 
 [[bin]]

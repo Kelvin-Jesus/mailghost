@@ -155,6 +155,8 @@ jobs:
     name: Publish package-manager metadata
     if: vars.PACKAGE_PUBLISHING_ENABLED == 'true'
     needs: publish
+    permissions:
+      contents: write
     uses: ./.github/workflows/publish-packages.yml
     with:
       tag: ${{ github.ref_name }}
